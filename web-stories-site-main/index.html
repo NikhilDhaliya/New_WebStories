@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Stories - Travel & Cooking Adventures | Your Story Platform</title>
+    
+    <!-- AMP required scripts -->
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" crossorigin>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    
+    <link rel="preconnect" href="https://cdn.ampproject.org" crossorigin>
+    <link rel="canonical" href="https://nikhildhaliya.github.io/web-stories-site/">
+    
+    <!-- AMP boilerplate -->
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    
+    <style amp-custom>
+        @import url('styles/common.css');
+        
+        body {
+            background: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        /* Update header/nav styles */
+        header {
+            padding: 0.8rem; /* Reduced from 1.5rem */
+        }
+
+        nav ul {
+            gap: 2.5rem; /* Reduced from 3rem */
+        }
+
+        nav a {
+            font-size: 0.9rem; /* Reduced from 1.1rem */
+            padding: 0.3rem 0; /* Reduced from 0.5rem */
+        }
+
+        .hero-section {
+            background: #f8f9fa;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero-section h1 {
+            font-size: 2rem;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .hero-section p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 0 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .story-preview {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 9/16;
+            background: #f0f0f0;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .story-thumbnail {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: #e0e0e0;
+        }
+
+        .story-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+        }
+
+        .story-overlay h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .story-overlay p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .story-category {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(255,255,255,0.9);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #1a1a1a;
+            font-weight: 500;
+        }
+
+        .stories-section {
+            padding: 2rem 0;
+        }
+
+        .section-header {
+            padding: 0 1rem;
+            margin-bottom: 2rem;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 0.6rem; /* Even smaller on mobile */
+            }
+
+            nav ul {
+                gap: 1.5rem; /* Reduced gap on mobile */
+            }
+
+            nav a {
+                font-size: 0.8rem;
+                padding: 0.2rem 0;
+            }
+
+            .hero-section {
+                padding: 4rem 1rem 2rem;
+            }
+
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+
+            .stories-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .story-preview {
+                aspect-ratio: 2/3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#stories">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Discover Web Stories</h1>
+            <p>Explore engaging visual stories about travel, cooking, and lifestyle</p>
+        </section>
+
+        <section class="stories-section" id="stories">
+            <div class="section-header">
+                <h2>Featured Stories</h2>
+            </div>
+            
+            <div class="stories-grid">
+                <!-- Story 1 -->
+                <div class="story-preview" role="button" tabindex="0" onclick="window.location.href='./stories/story1.html'">
+                    <div class="story-category">Travel</div>
+                    <div class="story-thumbnail"></div>
+                    <div class="story-overlay">
+                        <h3>Amazing Travel Story</h3>
+                        <p>Explore the hidden gems of Bali</p>
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="story-preview" role="button" tabindex="0" onclick="window.location.href='./stories/story2.html'">
+                    <div class="story-category">Cooking</div>
+                    <div class="story-thumbnail"></div>
+                    <div class="story-overlay">
+                        <h3>Cooking Adventure</h3>
+                        <p>Master the art of pasta making</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="./contact.html">Contact</a>
+                <a href="./privacy.html">Privacy Policy</a>
+            </div>
+            <p>&copy; 2024 Web Stories Site. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

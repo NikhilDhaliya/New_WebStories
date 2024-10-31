@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Web Stories Site</title>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <link rel="canonical" href="about.html">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+        @import url('styles/common.css');
+        
+        /* About page specific styles */
+        .about-content {
+            max-width: 800px;
+            margin: 8rem auto 4rem;
+            padding: 0 2rem;
+        }
+
+        .about-content h1 {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: relative;
+        }
+
+        .about-content h1::after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: #000;
+        }
+
+        .about-section {
+            margin-bottom: 4rem;
+            padding: 3rem;
+            background: #ffffff;
+            border: 1px solid #eaeaea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .about-section:hover::before {
+            opacity: 1;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-section:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .about-content {
+                margin-top: 6rem;
+                padding: 0 1rem;
+            }
+
+            .about-content h1 {
+                font-size: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            .about-section {
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .about-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html" class="active">About</a></li>
+                <li><a href="./index.html#stories">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about-content">
+            <h1>About Us</h1>
+            
+            <div class="about-section">
+                <p>Welcome to our Web Stories platform! We are passionate about creating engaging, visual stories that capture the essence of various topics, from travel adventures to cooking experiences.</p>
+            </div>
+            
+            <div class="about-section">
+                <p>Our mission is to provide immersive, mobile-first content that entertains and informs. Through the power of AMP Web Stories, we bring you bite-sized, visually appealing content that you can enjoy on the go.</p>
+            </div>
+            
+            <div class="about-section">
+                <p>Whether you're looking for travel inspiration, cooking tips, or lifestyle content, our stories are crafted to give you the best possible viewing experience.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="./contact.html">Contact</a>
+                <a href="./privacy.html">Privacy Policy</a>
+            </div>
+            <p>&copy; 2024 Web Stories Site. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
